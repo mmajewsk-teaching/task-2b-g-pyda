@@ -28,3 +28,11 @@
 #
 #Delete these comments before commit!
 #Good luck.
+from models import School, Class, Student
+
+if __name__ == "__main__":
+    stud1 = Student("Jan", "Kowalski", 0)
+    stud1.load_attendance()
+    print(stud1.get_attendance_score())
+
+
